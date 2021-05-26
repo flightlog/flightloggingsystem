@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  fls.identityserver:
+    image: ${DOCKER_REGISTRY-}flsidentityserver
+    build:
+      context: .
+      dockerfile: IdentityServer/FLS.IdentityServer/Dockerfile
+    ports:
+      - '5001:443'
+    volumes:
+      - ./IdentityServer:/root/IdentityServer:cached
+      - ./IdentityServer/certs:/https/
+      - type: bind
+        source: ./certs/aspnetapp-root-cert.cer
+        target: /https-root/aspnetapp-root-cert.cer
+    environment:
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_HTTPS_PORT=5001
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=password
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp-identity-server.pfx

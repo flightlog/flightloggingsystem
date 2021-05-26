@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  fls.identityserver:
+    image: ${DOCKER_REGISTRY-}flsidentityserver
+    build:
+      context: .
+      dockerfile: FLS.IdentityServer/Dockerfile
