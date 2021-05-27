@@ -13,5 +13,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Server\FLS.Data.WebApi\FLS.Data.WebApi.csproj" />
+  </ItemGroup>
+
 
 </Project>
