@@ -19,3 +19,22 @@ services:
       - ASPNETCORE_HTTPS_PORT=5001
       - ASPNETCORE_Kestrel__Certificates__Default__Password=password
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp-identity-server.pfx
+
+  fls.server.webapi:
+    image: ${DOCKER_REGISTRY-}flsserverwebapi
+    build:
+      context: .
+      dockerfile: Api/FLS.Server.WebApi/Dockerfile
+    ports:
+      - '6001:443'
+    volumes:
+      - ./Api:/root/Api:cached
+      - ./Api/certs:/https/
+      - type: bind
+        source: ./certs/aspnetapp-root-cert.cer
+        target: /https-root/aspnetapp-root-cert.cer
+    environment:
+      - ASPNETCORE_URLS="https://+;"
+      - ASPNETCORE_HTTPS_PORT=6001
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=password
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp-web-api.pfx

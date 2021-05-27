@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.IdentityServer", "Ident
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{570DB0C1-977D-4C75-80F5-76D6CDB1684C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{45FC079D-D238-45F8-92D4-7D17C5B0D7AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.Server.WebApi", "Api\FLS.Server.WebApi\FLS.Server.WebApi.csproj", "{156C56F4-D511-4992-BC02-57C2828213D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.Server.Angular", "Api\FLS.Server.Angular\FLS.Server.Angular.csproj", "{D51EA78F-9B1F-48E6-8E2F-BE127ECB1F41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +29,22 @@ Global
 		{570DB0C1-977D-4C75-80F5-76D6CDB1684C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{570DB0C1-977D-4C75-80F5-76D6CDB1684C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{570DB0C1-977D-4C75-80F5-76D6CDB1684C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156C56F4-D511-4992-BC02-57C2828213D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156C56F4-D511-4992-BC02-57C2828213D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156C56F4-D511-4992-BC02-57C2828213D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156C56F4-D511-4992-BC02-57C2828213D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51EA78F-9B1F-48E6-8E2F-BE127ECB1F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51EA78F-9B1F-48E6-8E2F-BE127ECB1F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51EA78F-9B1F-48E6-8E2F-BE127ECB1F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51EA78F-9B1F-48E6-8E2F-BE127ECB1F41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{671400BB-627C-4986-87C6-1A6B162AFA75} = {48FBA4EC-749B-43AA-81FA-C8BB3089578D}
+		{156C56F4-D511-4992-BC02-57C2828213D8} = {45FC079D-D238-45F8-92D4-7D17C5B0D7AA}
+		{D51EA78F-9B1F-48E6-8E2F-BE127ECB1F41} = {45FC079D-D238-45F8-92D4-7D17C5B0D7AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C5ABB35-85FF-4032-BBB6-B1CDC4E65D33}
