@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.IdentityServer", "Ident
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{570DB0C1-977D-4C75-80F5-76D6CDB1684C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{590E6819-F36A-4387-90E0-6F1C599E52BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.Server.WebApi", "Api\FLS.Server.WebApi\FLS.Server.WebApi.csproj", "{8D935C06-9FC9-4FA1-9AF7-7AED4AB3273D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,17 @@ Global
 		{570DB0C1-977D-4C75-80F5-76D6CDB1684C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{570DB0C1-977D-4C75-80F5-76D6CDB1684C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{570DB0C1-977D-4C75-80F5-76D6CDB1684C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D935C06-9FC9-4FA1-9AF7-7AED4AB3273D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D935C06-9FC9-4FA1-9AF7-7AED4AB3273D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D935C06-9FC9-4FA1-9AF7-7AED4AB3273D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D935C06-9FC9-4FA1-9AF7-7AED4AB3273D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{671400BB-627C-4986-87C6-1A6B162AFA75} = {48FBA4EC-749B-43AA-81FA-C8BB3089578D}
+		{8D935C06-9FC9-4FA1-9AF7-7AED4AB3273D} = {590E6819-F36A-4387-90E0-6F1C599E52BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C5ABB35-85FF-4032-BBB6-B1CDC4E65D33}

@@ -19,8 +19,8 @@ namespace FLS.IdentityServer
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
             {
-                new ApiScope("scope1"),
-                new ApiScope("scope2"),
+                new ApiScope("flsapi", "FLS API"),
+                new ApiScope("flsworkflowapi", "FLS Workflow API")
             };
 
         public static IEnumerable<Client> Clients =>
@@ -35,7 +35,7 @@ namespace FLS.IdentityServer
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
 
-                    AllowedScopes = { "scope1" }
+                    AllowedScopes = { "flsworkflowapi" }
                 },
 
                 // interactive client using code flow + pkce
@@ -51,7 +51,7 @@ namespace FLS.IdentityServer
                     PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
 
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "scope2" }
+                    AllowedScopes = { "openid", "profile", "flsapi" }
                 },
             };
     }
