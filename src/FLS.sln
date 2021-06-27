@@ -11,11 +11,13 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{590E6819-F36A-4387-90E0-6F1C599E52BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.Server.WebApi", "Api\FLS.Server.WebApi\FLS.Server.WebApi.csproj", "{8D935C06-9FC9-4FA1-9AF7-7AED4AB3273D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.Server.WebApi", "Api\FLS.Server.WebApi\FLS.Server.WebApi.csproj", "{8D935C06-9FC9-4FA1-9AF7-7AED4AB3273D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{8DFAA294-3AFD-497B-8CDC-ECFE6098B92B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.Data.WebApi", "Server\FLS.Data.WebApi\FLS.Data.WebApi.csproj", "{ECE5868E-6D57-4591-B627-73BADF39ED38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.Data.WebApi", "Server\FLS.Data.WebApi\FLS.Data.WebApi.csproj", "{ECE5868E-6D57-4591-B627-73BADF39ED38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{600BE26F-C381-4213-B7B0-004A052648A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

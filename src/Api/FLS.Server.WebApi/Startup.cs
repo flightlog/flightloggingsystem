@@ -53,7 +53,7 @@ namespace FLS.Server.WebApi
                 // this defines a CORS policy called "default"
                 options.AddPolicy("default", policy =>
                 {
-                    policy.WithOrigins("https://localhost:5003")
+                    policy.WithOrigins("https://localhost:5003") //allowing angular client
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                 });
