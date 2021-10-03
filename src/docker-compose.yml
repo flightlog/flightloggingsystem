@@ -24,12 +24,12 @@ services:
     image: ${DOCKER_REGISTRY-}flsserverwebapi
     build:
       context: .
-      dockerfile: Api/FLS.Server.WebApi/Dockerfile
+      dockerfile: WebApi/FLS.Server.WebApi/Dockerfile
     ports:
       - '5002:443'
     volumes:
-      - ./Api:/root/Api:cached
-      - ./Api/certs:/https/
+      - ./WebApi:/root/WebApi:cached
+      - ./WebApi/certs:/https/
       - type: bind
         source: ./certs/aspnetapp-root-cert.cer
         target: /https-root/aspnetapp-root-cert.cer
