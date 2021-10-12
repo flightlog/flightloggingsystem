@@ -11,9 +11,11 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.10" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\FLS.Common\FLS.Common.csproj" />
     <ProjectReference Include="..\..\Data\FLS.Data.WebApi\FLS.Data.WebApi.csproj" />
   </ItemGroup>
 
