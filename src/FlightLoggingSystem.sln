@@ -11,21 +11,19 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{600BE26F-C381-4213-B7B0-004A052648A1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{10F2ECD6-414D-4C3F-92C2-A131B395AD73}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{F5B35D09-68C8-4910-98B7-CF1AA954CEEF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.Data.WebApi", "Data\FLS.Data.WebApi\FLS.Data.WebApi.csproj", "{AA5C4CBF-B081-4278-9694-D71DD9609A54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.Server.Data", "Data\FLS.Server.Data\FLS.Server.Data.csproj", "{51DDA325-61C7-4ADF-AF69-A240526F6D0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.Server.Data", "Data\FLS.Server.Data\FLS.Server.Data.csproj", "{51DDA325-61C7-4ADF-AF69-A240526F6D0E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{BBAE9569-C424-4C50-AC64-4EF1F8269E55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.Common", "Common\FLS.Common\FLS.Common.csproj", "{AA341986-13B7-4815-A376-BACDC892AB5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.Common", "Common\FLS.Common\FLS.Common.csproj", "{AA341986-13B7-4815-A376-BACDC892AB5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.AuditLogging", "Common\FLS.AuditLogging\FLS.AuditLogging.csproj", "{D7F7A017-702C-4320-8011-F5C659D21546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.AuditLogging", "Common\FLS.AuditLogging\FLS.AuditLogging.csproj", "{D7F7A017-702C-4320-8011-F5C659D21546}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.EmailService", "Common\FLS.EmailService\FLS.EmailService.csproj", "{1B32F8B7-B11B-496A-95CD-D68785D86C6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.EmailService", "Common\FLS.EmailService\FLS.EmailService.csproj", "{1B32F8B7-B11B-496A-95CD-D68785D86C6F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{32F9B05A-F2FF-402D-A592-0B876877FB9D}"
 EndProject
@@ -33,11 +31,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{83457F31
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.Server.WebApi", "Server\FLS.Server.WebApi\FLS.Server.WebApi.csproj", "{BD11A59A-1796-4C14-9294-FBE8801FFC72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.Server.Service", "Server\FLS.Server.Service\FLS.Server.Service.csproj", "{594D95CF-6370-4948-9D46-944557F3D936}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.Server.Service", "Server\FLS.Server.Service\FLS.Server.Service.csproj", "{594D95CF-6370-4948-9D46-944557F3D936}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.Server.DAL", "Server\FLS.Server.DAL\FLS.Server.DAL.csproj", "{A8DF7987-77AD-4883-A058-D57DEFCB7CD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLS.RulesEngine", "Common\FLS.RulesEngine\FLS.RulesEngine.csproj", "{20BCCD16-F926-4205-BE9F-5C01E3513757}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLS.RulesEngine", "Common\FLS.RulesEngine\FLS.RulesEngine.csproj", "{20BCCD16-F926-4205-BE9F-5C01E3513757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

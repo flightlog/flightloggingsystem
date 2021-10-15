@@ -2,7 +2,7 @@
 
 namespace FLS.Data.WebApi.AircraftReservation
 {
-    public class AircraftReservationOverview
+    public class ReservationOverview
     {
         public Guid AircraftReservationId { get; set; }
 

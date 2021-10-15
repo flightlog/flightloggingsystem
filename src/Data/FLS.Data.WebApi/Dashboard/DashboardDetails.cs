@@ -18,6 +18,6 @@ namespace FLS.Data.WebApi.Dashboard
 
         public GliderLicenceStateDetails GliderLicenceStateDetails { get; set; }
 
-        public List<AircraftReservationOverview> MyNextAircraftReservations { get; set; }
+        public List<ReservationOverview> MyNextAircraftReservations { get; set; }
     }
 }

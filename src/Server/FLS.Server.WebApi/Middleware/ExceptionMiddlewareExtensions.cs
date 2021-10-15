@@ -1,10 +1,10 @@
 ﻿using FLS.Server.WebApi.Middleware;
 using Microsoft.AspNetCore.Builder;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
+/// <summary>
+/// Namespace should be taken from DI
+/// <seealso cref="https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-usage"/>
+/// </summary>
 namespace Microsoft.Extensions.DependencyInjection
 {
     // Extension method used to add the middleware to the HTTP request pipeline.

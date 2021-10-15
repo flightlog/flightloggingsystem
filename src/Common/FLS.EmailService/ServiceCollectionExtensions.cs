@@ -1,8 +1,12 @@
 ﻿using FLS.Common.Validators;
-using Microsoft.Extensions.DependencyInjection;
+using FLS.EmailService;
 using System;
 
-namespace FLS.EmailService
+/// <summary>
+/// Namespace should be taken from DI
+/// <seealso cref="https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-usage"/>
+/// </summary>
+namespace Microsoft.Extensions.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {

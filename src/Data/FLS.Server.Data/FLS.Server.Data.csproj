@@ -4,4 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\FLS.AuditLogging\FLS.AuditLogging.csproj" />
+    <ProjectReference Include="..\..\Common\FLS.Common\FLS.Common.csproj" />
+    <ProjectReference Include="..\FLS.Data.WebApi\FLS.Data.WebApi.csproj" />
+  </ItemGroup>
+
 </Project>
