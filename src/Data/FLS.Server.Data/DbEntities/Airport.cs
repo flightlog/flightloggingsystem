@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq.Expressions;
 
 namespace FLS.Server.Data.DbEntities
 {
@@ -55,5 +56,40 @@ namespace FLS.Server.Data.DbEntities
         #endregion Metadata Properties
 
         public virtual Country Country { get; set; }
+
+        public static Expression<Func<Airport, AirportOverview>> ToAirportOverview
+        {
+            get
+            {
+                return x => new AirportOverview()
+                {
+                    AirportId = x.AirportId,
+                    AirportName = x.AirportName,
+                    IcaoCode = x.IcaoCode,
+                    AirportTypeName = x.AirportType.ToString(),
+                    CountryName = x.Country.CountryName,
+                    //AirportFrequency = x.A
+                    //Elevation = x.ElevationInM
+                };
+            }
+        }
+
+        public static Expression<Func<Airport, AirportDetails>> ToAirportDetails
+        {
+            get
+            {
+                return x => new AirportDetails()
+                {
+                    AirportId = x.AirportId,
+                    AirportName = x.AirportName,
+                    IcaoCode = x.IcaoCode,
+                    AirportType = x.AirportType,
+                    CountryId = x.CountryId,
+                    ElevationInM = x.ElevationInM,
+                    Latitude = x.Latitude,
+                    Longitude = x.Longitude
+                };
+            }
+        }
     }
 }

@@ -7,6 +7,26 @@ namespace FLS.Server.Data.DbEntities
 {
     public class User : IMetadata, IAuditable
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid UserId { get; set; }
+
+        public Guid ClubId { get; set; }
+
+        [Required]
+        [StringLength(Constants.UserNameMaxLength)]
+        public string UserName { get; set; }
+
+        [Required]
+        [StringLength(Constants.EmailAddressMaxLength)]
+        public string EmailAddress { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string DisplayName { get; set; }
+
+        public Guid? PersonId { get; set; }
+
         #region Metadata Properties
 
         [Column(TypeName = "datetime2")]
@@ -25,5 +45,9 @@ namespace FLS.Server.Data.DbEntities
         [Timestamp]
         public byte[] RowVersion { get; set; }
         #endregion Metadata Properties
+
+        public virtual Club Club { get; set; }
+
+        public virtual Person Person { get; set; }
     }
 }

@@ -21,7 +21,7 @@ namespace FLS.Server.Data.DbEntities
         [Required]
         [StringLength(10)]
         public string ClubKey { get; set; }
-        
+
         //https://docs.microsoft.com/en-us/ef/core/modeling/value-conversions
         [Required]
         [Column(TypeName = "nvarchar(20)")]
@@ -44,7 +44,7 @@ namespace FLS.Server.Data.DbEntities
         [StringLength(30)]
         public string FaxNumber { get; set; }
 
-        [StringLength(256)]
+        [StringLength(Constants.EmailAddressMaxLength)]
         public string EmailAddress { get; set; }
 
         [StringLength(100)]

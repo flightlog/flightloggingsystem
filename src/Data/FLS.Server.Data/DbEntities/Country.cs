@@ -7,6 +7,7 @@ namespace FLS.Server.Data.DbEntities
     {
         public Country()
         {
+            Airports = new HashSet<Airport>(); 
             Clubs = new HashSet<Club>();
             Users = new HashSet<User>();
         }
@@ -21,6 +22,8 @@ namespace FLS.Server.Data.DbEntities
         [Required]
         [StringLength(2)]
         public string CountryCodeIso2 { get; set; }
+
+        public virtual ICollection<Airport> Airports { get; set; }
 
         public virtual ICollection<Club> Clubs { get; set; }
 
